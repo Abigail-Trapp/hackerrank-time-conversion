@@ -15,19 +15,23 @@ function timeConversions(s){
     let totalSum = two + three + four + five + six + seven
 
    
-    if((zero <= '1') && (eight === "A") && (nine === "M")){
+    if((sum === "12") && (eight === "A") && (nine === "M")){
+        sum = "00"
         return sum + totalSum
-    } else if((eight === '1') && (nine === '2')){
-      sum = "00"
-       return sum + totalSum
-    } else if((zero === '1') && (one === '2')){
-        sum = "12"
+    }  else 
+    if((sum === "12") && (eight === 'P') && (nine === 'M')) {
+        
          return sum + totalSum
+    } 
+    else if((eight === 'P') && (nine === 'M')){
+        return parseInt(sum) + parseInt(12) + totalSum
+    } else if ((eight === "A") && (nine === "M")){
+        return sum + totalSum
     }
     else {
-        return parseInt(sum) + parseInt(12) + totalSum
+        return sum + totalSum
     }
-    
+
   }
 
   console.log(timeConversions("12:05:45AM"))
