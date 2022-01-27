@@ -20,7 +20,6 @@ function timeConversions(s){
         return sum + totalSum
     }  else 
     if((sum === "12") && (eight === 'P') && (nine === 'M')) {
-        
          return sum + totalSum
     } 
     else if((eight === 'P') && (nine === 'M')){
@@ -31,8 +30,13 @@ function timeConversions(s){
     else {
         return sum + totalSum
     }
-
   }
+
+//   let btn = document.getElementById("btn")
+//   btn.addEventListener(click, function(){
+      
+//   })
+
 
   console.log(timeConversions("12:05:45AM"))
   console.log(timeConversions("01:05:45AM"))
