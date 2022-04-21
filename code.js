@@ -31,11 +31,16 @@ function timeConversions(s){
         return sum + totalSum
     }
   }
-
-//   let btn = document.getElementById("btn")
-//   btn.addEventListener(click, function(){
-      
-//   })
+  let body = document.querySelector("body")
+  let input = document.getElementById("input").value
+  let button = document.getElementById("btn")
+  button.addEventListener("click",function(){
+  
+        let output = document.createElement("p")
+        output.innerText = `${timeConversions(input)}`
+        body.append(output)
+    
+  })
 
 
   console.log(timeConversions("12:05:45AM"))
