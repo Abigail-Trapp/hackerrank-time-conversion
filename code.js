@@ -32,10 +32,10 @@ function timeConversions(s){
     }
   }
   let body = document.querySelector("body")
-  let input = document.getElementById("input").value
+  
   let button = document.getElementById("btn")
   button.addEventListener("click",function(){
-  
+    let input = document.getElementById("input").value
         let output = document.createElement("p")
         output.innerText = `${timeConversions(input)}`
         body.append(output)
